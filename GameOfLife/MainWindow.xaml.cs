@@ -95,7 +95,17 @@ namespace GameOfLife
 
         private void Randomer_Click(object sender, RoutedEventArgs e) // Das Spielfeld neu würfeln/reseten
         {
-            //foreach r 
+            Random Münze = new Random();
+            for (int i = 0; i < AnzahlFelderHöhe; i++)
+            {
+                for (int j = 0; j < AnzahlFelderBreite; j++)
+                {
+                    if (Münze.Next(2) == 1)
+                        Felder[i, j].Fill = Brushes.Olive;
+                    else
+                        Felder[i, j].Fill = Brushes.Cyan;
+                }
+            }
         }
 
         private void Step_Click(object sender, RoutedEventArgs e) // Manuel einen Tick ausführen mit Button

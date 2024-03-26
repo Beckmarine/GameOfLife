@@ -5,8 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameOfLife"
         mc:Ignorable="d"
-        Title="Conway - Game of Life" Height="450" Width="
-        600">
+        Title="Conway - Game of Life" Height="450" Width="650">
     <Grid>
         <Canvas Name="Zeichenfläche" HorizontalAlignment="Left" Height="300" Margin="73,61,0,0" VerticalAlignment="Top" Width="300" Loaded="Zeichenfläche_Loaded"/>
         <Button x:Name="ButtonStart" Content="Start" HorizontalAlignment="Left" Margin="470,116,0,0" VerticalAlignment="Top" Height="40" Width="120" FontSize="22" Click="ButtonStart_Click"/>
